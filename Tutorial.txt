@@ -2,6 +2,10 @@ Skip Wilson https://www.youtube.com/user/SkipCasts
 
 Swift Tutorial - http://www.raywenderlich.com/74438/swift-tutorial-a-quick-start
 
+Stopwatch Tutorial - http://blog.agupieware.com/2014/08/tutorial-simple-ios-stopwatch-app-in.html
+
+ToDo Tutorial - https://www.youtube.com/watch?v=sxDSc2Z2W4g
+
 Constants are declared with 'let'
 Variables are declared with 'var'
 
