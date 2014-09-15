@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numericDisplay: UILabel!;
     @IBOutlet weak var resetButton: UIButton!;
     @IBOutlet weak var startStopButton: UIButton!;
+    @IBOutlet weak var splitButton: UIButton!
     
     var displayLink: CADisplayLink!;
     var lastDisplayLinkTimeStamp: CFTimeInterval!;
@@ -25,12 +26,17 @@ class ViewController: UIViewController {
         self.numericDisplay.text = "0.00";
         self.resetButton.setTitle("Reset", forState: UIControlState.Normal);
         self.startStopButton.setTitle("Start", forState: UIControlState.Normal);
+        self.splitButton.setTitle("Split", forState: UIControlState.Normal);
+        
         
         //Initialising the display link and directng it to call our displayLinkUpdate: method when an update is available
         self.displayLink = CADisplayLink(target: self, selector: "displayLinkUpdate:");
         
-        //Ensure that the pdislay link is initially not updating
+        //Ensure that the dislay link is initially not updating
         self.displayLink.paused = true;
+        
+        //Hide the split button whilst we are not timing
+        self.splitButton.hidden = true;
         
         //Scheduling the display link to send notifications
         self.displayLink.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSRunLoopCommonModes);
@@ -53,13 +59,18 @@ class ViewController: UIViewController {
         
         //Set button to start state
         self.startStopButton.setTitle("Start", forState: UIControlState.Normal);
+        
+        //Hide the split button whist we are not timing
+        self.splitButton.hidden = true;
     }
 
     @IBAction func startStopButtonPressed(sender: AnyObject) {
-        //Toggle the displa link's paused bool value
+        //Toggle the display link's paused bool value
         self.displayLink.paused = !(self.displayLink.paused);
         
-        //If the displau lin is not updating us...
+        self.splitButton.hidden = !self.splitButton.hidden;
+        
+        //If the display link is not updating us...
         var buttonText:String = "Stop";
         if self.displayLink.paused {
             if self.lastDisplayLinkTimeStamp > 0 {
@@ -71,6 +82,11 @@ class ViewController: UIViewController {
         
         self.startStopButton.setTitle(buttonText, forState: UIControlState.Normal)
     }
+    
+    @IBAction func splitButtonPressed(sender: AnyObject) {
+        
+    }
+    
     
     func displayLinkUpdate(sender: CADisplayLink){
         //Update running tally
@@ -85,5 +101,19 @@ class ViewController: UIViewController {
     
     
     
+}
+
+class SplitTimeDataSource : NSObject {
+    var times:[Double] = [10.00, 11.00, 12.00, 13.00];
+    
+    func tableView(tableView: UITableView!, numbeOfRowsInSection section: Int) -> Int {
+        return times.count;
+    }
+    
+    func tableView(tableView: UITableView!, cellForRowAtIndexPath  indexPath: NSIndexPath!) -> UITableViewCell! {
+        let cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: nil);
+        
+        return cell;
+    }
 }
 
