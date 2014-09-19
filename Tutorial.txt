@@ -6,6 +6,8 @@ Stopwatch Tutorial - http://blog.agupieware.com/2014/08/tutorial-simple-ios-stop
 
 air pair Tutorial - www.airpair.com/swift/building-swift-app-tutorial
 
+TicTacToe - https://www.youtube.com/watch?v=JwqsbsyN3LA
+
 Constants are declared with 'let'
 Variables are declared with 'var'
 

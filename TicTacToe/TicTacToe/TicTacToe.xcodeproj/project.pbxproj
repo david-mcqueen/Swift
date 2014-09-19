@@ -13,6 +13,8 @@
 		55796C1A19CC18D600318677 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55796C1919CC18D600318677 /* Images.xcassets */; };
 		55796C1D19CC18D600318677 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55796C1B19CC18D600318677 /* LaunchScreen.xib */; };
 		55796C2919CC18D600318677 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55796C2819CC18D600318677 /* TicTacToeTests.swift */; };
+		55796C3319CC1E4F00318677 /* TTTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55796C3219CC1E4F00318677 /* TTTImageView.swift */; };
+		55796C3519CC205600318677 /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55796C3419CC205600318677 /* MPCHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		55796C2219CC18D600318677 /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55796C2719CC18D600318677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55796C2819CC18D600318677 /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
+		55796C3219CC1E4F00318677 /* TTTImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTImageView.swift; sourceTree = "<group>"; };
+		55796C3419CC205600318677 /* MPCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				55796C1219CC18D600318677 /* AppDelegate.swift */,
 				55796C1419CC18D600318677 /* ViewController.swift */,
+				55796C3219CC1E4F00318677 /* TTTImageView.swift */,
+				55796C3419CC205600318677 /* MPCHandler.swift */,
 				55796C1619CC18D600318677 /* Main.storyboard */,
 				55796C1919CC18D600318677 /* Images.xcassets */,
 				55796C1B19CC18D600318677 /* LaunchScreen.xib */,
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55796C1519CC18D600318677 /* ViewController.swift in Sources */,
+				55796C3519CC205600318677 /* MPCHandler.swift in Sources */,
 				55796C1319CC18D600318677 /* AppDelegate.swift in Sources */,
+				55796C3319CC1E4F00318677 /* TTTImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
