@@ -2,14 +2,16 @@
 //  AddTaskViewController.swift
 //  TaskMe
 //
-//  Created by DavidMcQueen on 17/09/2014.
+//  Created by DavidMcQueen on 18/09/2014.
 //  Copyright (c) 2014 DavidMcQueen. All rights reserved.
 //
 
 import UIKit
 
 class AddTaskViewController: UIViewController {
-
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var notesField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

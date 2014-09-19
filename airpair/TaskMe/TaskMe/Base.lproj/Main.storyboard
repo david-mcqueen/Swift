@@ -76,7 +76,7 @@
                     <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hka-Bw-jWq">
                             <connections>
-                                <segue destination="O1F-zx-2G2" kind="presentation" identifier="showAddTask" id="gjQ-dL-t6C"/>
+                                <segue destination="O1F-zx-2G2" kind="presentation" identifier="showAddTask" id="Ogb-9V-92Y"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -89,7 +89,7 @@
         <!--Add Task-->
         <scene sceneID="mcQ-1o-oI9">
             <objects>
-                <viewController id="aCd-IH-vfC" sceneMemberID="viewController">
+                <viewController id="aCd-IH-vfC" customClass="AddTaskViewController" customModule="TaskMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lhg-7w-4Fg"/>
                         <viewControllerLayoutGuide type="bottom" id="AFA-c9-0jd"/>
@@ -117,11 +117,17 @@
                             <constraint firstItem="FXt-5w-mx6" firstAttribute="top" secondItem="HCg-as-z91" secondAttribute="top" constant="144" id="pU4-Ra-W9v"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Task" id="a5K-lO-hQe"/>
+                    <navigationItem key="navigationItem" title="Add Task" id="a5K-lO-hQe">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nqL-es-QJy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="test" destination="HCg-as-z91" id="hXz-uW-soC"/>
+                        <outlet property="test2" destination="FXt-5w-mx6" id="Gyj-4l-OQj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMw-aA-5fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343" y="886"/>
+            <point key="canvasLocation" x="1483" y="870"/>
         </scene>
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
