@@ -8,6 +8,8 @@ air pair Tutorial - www.airpair.com/swift/building-swift-app-tutorial
 
 TicTacToe - https://www.youtube.com/watch?v=JwqsbsyN3LA
 
+TouchID - http://www.swiftcast.tv/articles/getting-started-with-touch-id-in-swift
+
 Constants are declared with 'let'
 Variables are declared with 'var'
 
