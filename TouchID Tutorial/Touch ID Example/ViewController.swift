@@ -15,12 +15,36 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        requestFingerPrintAuthentication()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func requestFingerPrintAuthentication(){
+        let context = LAContext()
+        var authError: NSError?
+        let authenticationReason: String = "To display a message to the user"
+        
+        if context.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &authError) {
+            context.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: authenticationReason, reply: {
+                (success: Bool, error: NSError?) -> Void in
+                if success {
+                    self.updateMessageLabel("Woohoo")
+                } else {
+                    self.updateMessageLabel("Unable to Authenticate")
+                }
+            })
+        }
+    }
+    
+    func updateMessageLabel(message: String) {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.messageLabel.text = message
+        })
     }
 }
 
