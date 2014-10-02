@@ -10,6 +10,10 @@ TicTacToe - https://www.youtube.com/watch?v=JwqsbsyN3LA
 
 TouchID - http://www.swiftcast.tv/articles/getting-started-with-touch-id-in-swift
 
+Custom tableView controller - https://www.youtube.com/watch?v=_K-83AJYgho
+
+Basic StoryBoard Navigation Tutorial - https://www.youtube.com/watch?v=AQXWsDNno8o
+
 Constants are declared with 'let'
 Variables are declared with 'var'
 
