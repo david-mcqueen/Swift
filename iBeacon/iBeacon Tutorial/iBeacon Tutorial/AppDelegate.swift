@@ -7,15 +7,52 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
+    var locationManager: CLLocationManager?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let uuidString = "EBEFD083-70A2-47C8-9837-E7B5634DF524";
+        //The UUID assigned to the iBeacon. The same UUID can be applied to multiple beacons (which are then differentiated via the Major & Minor values
+        
+        let beaconIdentifier = "iBeaconModules.us";
+        //Not sure yet. This is the website tutorial is on
+        
+        let beaconUUID:NSUUID = NSUUID(UUIDString: uuidString);
+        //not sure yet
+        
+        let beaconRegion:CLBeaconRegion = CLBeaconRegion(proximityUUID: beaconUUID, identifier: beaconIdentifier);
+        
+        locationManager = CLLocationManager();
+        if(locationManager!.respondsToSelector("requestAlwaysAuthorization")){
+            locationManager!.requestAlwaysAuthorization();
+        }
+        
+        locationManager!.delegate = self;
+        locationManager!.pausesLocationUpdatesAutomatically = false;
+        
+        locationManager!.startMonitoringForRegion(beaconRegion);
+        locationManager!.startRangingBeaconsInRegion(beaconRegion);
+        locationManager!.startUpdatingLocation();
+        
+        
+        //If iOS 8 we need the users permission to send notifications
+        if(application.respondsToSelector("registerUserNotificationSettings:")){
+            application.registerUserNotificationSettings(UIUserNotificationSettings(
+                forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound, categories: nil
+                )
+            )
+        }
+        
+        // TODO: - Handle if the above permission request is declined
+        
+        // TODO: - Add in the "9. CLean Up" section of the tutorial.
         return true
     }
 
@@ -43,4 +80,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+extension AppDelegate: CLLocationManagerDelegate {
+    
+    func sendLocalNotificationWithMessage(message: String!) {
+        
+        let notification:UILocalNotification = UILocalNotification();
+        notification.alertBody = message;
+        UIApplication.sharedApplication().scheduleLocalNotification(notification);
+    }
+    
+    func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!){
+        
+        NSLog("didRangeBeacons");
+        var message:String = "";
+        
+        if(beacons.count > 0){
+            let nearestBeacon:CLBeacon = beacons[0] as CLBeacon;
+            
+            switch nearestBeacon.proximity {
+            case CLProximity.Far:
+                message = "You are far away from the Beacon";
+            case CLProximity.Near:
+                message = "You are near the beacon";
+            case CLProximity.Immediate:
+                message = "You are in the immediate proximity of the beacon";
+            case CLProximity.Unknown:
+                return;
+            }
+        } else{
+            message = "No beacons are nearby";
+        }
+        
+        NSLog("%@", message);
+        sendLocalNotificationWithMessage(message);
+    }
+}
+
+
 
