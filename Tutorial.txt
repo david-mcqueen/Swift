@@ -14,6 +14,9 @@ Custom tableView controller - https://www.youtube.com/watch?v=_K-83AJYgho
 
 Basic StoryBoard Navigation Tutorial - https://www.youtube.com/watch?v=AQXWsDNno8o
 
+
+iBeacon Tutorial - http://ibeaconmodules.us/blogs/news/14702963-getting-started-developing-ibeacon-apps-with-swift-on-apple-ios-7-8
+
 Constants are declared with 'let'
 Variables are declared with 'var'
 
