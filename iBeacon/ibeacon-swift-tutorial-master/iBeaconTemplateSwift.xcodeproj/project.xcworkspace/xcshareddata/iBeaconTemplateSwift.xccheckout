@@ -12,20 +12,24 @@
 	<dict>
 		<key>698F84060E14097BC4FB2642054E8E3E8388829C</key>
 		<string>ssh://github.com/relevante/ibeacon-swift-tutorial.git</string>
+		<key>89DEA3F5F9568CF75855BA588A653ED890DBDD26</key>
+		<string>https://github.com/david-mcqueen/Swift.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iBeaconTemplateSwift.xcodeproj/project.xcworkspace</string>
+	<string>iBeacon/ibeacon-swift-tutorial-master/iBeaconTemplateSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>698F84060E14097BC4FB2642054E8E3E8388829C</key>
-		<string>../..</string>
+		<string>../../../../../iBeaconTemplateSwift</string>
+		<key>89DEA3F5F9568CF75855BA588A653ED890DBDD26</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/relevante/ibeacon-swift-tutorial.git</string>
+	<string>https://github.com/david-mcqueen/Swift.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>698F84060E14097BC4FB2642054E8E3E8388829C</string>
+	<string>89DEA3F5F9568CF75855BA588A653ED890DBDD26</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>698F84060E14097BC4FB2642054E8E3E8388829C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iBeaconTemplateSwift</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89DEA3F5F9568CF75855BA588A653ED890DBDD26</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Swift</string>
 		</dict>
 	</array>
 </dict>
