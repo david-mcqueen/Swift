@@ -1,15 +1,15 @@
 //
-//  TestStoryboardTests.swift
-//  TestStoryboardTests
+//  AutoLayoutTests.swift
+//  AutoLayoutTests
 //
-//  Created by DavidMcQueen on 02/10/2014.
+//  Created by DavidMcQueen on 06/10/2014.
 //  Copyright (c) 2014 DavidMcQueen. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class TestStoryboardTests: XCTestCase {
+class AutoLayoutTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

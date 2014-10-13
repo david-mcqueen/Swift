@@ -17,6 +17,8 @@ Basic StoryBoard Navigation Tutorial - https://www.youtube.com/watch?v=AQXWsDNno
 
 iBeacon Tutorial - http://ibeaconmodules.us/blogs/news/14702963-getting-started-developing-ibeacon-apps-with-swift-on-apple-ios-7-8
 
+better iBeacon Tutorial - http://willd.me/posts/getting-started-with-ibeacon-a-swift-tutorial
+
 Constants are declared with 'let'
 Variables are declared with 'var'
 

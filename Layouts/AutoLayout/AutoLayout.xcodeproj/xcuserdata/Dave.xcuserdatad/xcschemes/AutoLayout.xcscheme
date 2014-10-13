@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55625D2B19DD88DA001986D1"
-               BuildableName = "TestStoryboard.app"
-               BlueprintName = "TestStoryboard"
-               ReferencedContainer = "container:TestStoryboard.xcodeproj">
+               BlueprintIdentifier = "55F6328D19E2BAFF005BF7A4"
+               BuildableName = "AutoLayout.app"
+               BlueprintName = "AutoLayout"
+               ReferencedContainer = "container:AutoLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55625D4219DD88DB001986D1"
-               BuildableName = "TestStoryboardTests.xctest"
-               BlueprintName = "TestStoryboardTests"
-               ReferencedContainer = "container:TestStoryboard.xcodeproj">
+               BlueprintIdentifier = "55F632A219E2BAFF005BF7A4"
+               BuildableName = "AutoLayoutTests.xctest"
+               BlueprintName = "AutoLayoutTests"
+               ReferencedContainer = "container:AutoLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55625D4219DD88DB001986D1"
-               BuildableName = "TestStoryboardTests.xctest"
-               BlueprintName = "TestStoryboardTests"
-               ReferencedContainer = "container:TestStoryboard.xcodeproj">
+               BlueprintIdentifier = "55F632A219E2BAFF005BF7A4"
+               BuildableName = "AutoLayoutTests.xctest"
+               BlueprintName = "AutoLayoutTests"
+               ReferencedContainer = "container:AutoLayout.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55625D2B19DD88DA001986D1"
-            BuildableName = "TestStoryboard.app"
-            BlueprintName = "TestStoryboard"
-            ReferencedContainer = "container:TestStoryboard.xcodeproj">
+            BlueprintIdentifier = "55F6328D19E2BAFF005BF7A4"
+            BuildableName = "AutoLayout.app"
+            BlueprintName = "AutoLayout"
+            ReferencedContainer = "container:AutoLayout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55625D2B19DD88DA001986D1"
-            BuildableName = "TestStoryboard.app"
-            BlueprintName = "TestStoryboard"
-            ReferencedContainer = "container:TestStoryboard.xcodeproj">
+            BlueprintIdentifier = "55F6328D19E2BAFF005BF7A4"
+            BuildableName = "AutoLayout.app"
+            BlueprintName = "AutoLayout"
+            ReferencedContainer = "container:AutoLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55625D2B19DD88DA001986D1"
-            BuildableName = "TestStoryboard.app"
-            BlueprintName = "TestStoryboard"
-            ReferencedContainer = "container:TestStoryboard.xcodeproj">
+            BlueprintIdentifier = "55F6328D19E2BAFF005BF7A4"
+            BuildableName = "AutoLayout.app"
+            BlueprintName = "AutoLayout"
+            ReferencedContainer = "container:AutoLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

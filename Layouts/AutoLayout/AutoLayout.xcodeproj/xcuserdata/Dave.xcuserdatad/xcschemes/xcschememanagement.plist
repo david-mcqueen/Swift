@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestStoryboard.xcscheme</key>
+		<key>AutoLayout.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>55625D2B19DD88DA001986D1</key>
+		<key>55F6328D19E2BAFF005BF7A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>55625D4219DD88DB001986D1</key>
+		<key>55F632A219E2BAFF005BF7A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

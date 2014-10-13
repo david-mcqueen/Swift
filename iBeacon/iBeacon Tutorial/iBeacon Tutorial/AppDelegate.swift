@@ -117,11 +117,12 @@ extension AppDelegate: CLLocationManagerDelegate {
                 switch nearestBeacon.proximity {
                 case CLProximity.Far:
                     message = "You are far away from the beacon"
-                    playSound = true
                 case CLProximity.Near:
                     message = "You are near the beacon"
+                    playSound = true
                 case CLProximity.Immediate:
                     message = "You are in the immediate proximity of the beacon"
+                    playSound = true
                 case CLProximity.Unknown:
                     return
                 }
