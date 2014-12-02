@@ -19,6 +19,14 @@ iBeacon Tutorial - http://ibeaconmodules.us/blogs/news/14702963-getting-started-
 
 better iBeacon Tutorial - http://willd.me/posts/getting-started-with-ibeacon-a-swift-tutorial
 
+HealthKit
+http://www.drdobbs.com/mobile/ios-8-healthkit-working-with-biometric-d/240169153?pgno=2
+
+HealthKit
+https://github.com/vandadnp/iOS-8-Swift-Programming-Cookbook/blob/master/chapter-health/Accessing%20and%20Modifying%20User%E2%80%99s%20Height%20Information/Accessing%20and%20Modifying%20User%E2%80%99s%20Height%20Information/ViewController.swift
+
+
+
 Constants are declared with 'let'
 Variables are declared with 'var'
 
