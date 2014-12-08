@@ -1,25 +1,58 @@
 //
 //  ViewController.swift
-//  PayPalTest
+//  PayPalSDK
 //
-//  Created by DavidMcQueen on 07/12/2014.
-//  Copyright (c) 2014 David McQueen. All rights reserved.
+//  Created by Messerschmidt, Tim on 08.06.14.
+//  Copyright (c) 2014 Messerschmidt, Tim. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, PayPalPaymentDelegate {
+    var config = PayPalConfiguration()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true);
+        PayPalMobile.preconnectWithEnvironment(PayPalEnvironmentNoNetwork)
+            }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    
 
+    @IBAction func Buy(sender: AnyObject) {
+        let amount = NSDecimalNumber(string:"10.00")
+        
+        println("amount \(amount)")
+        
+        var payment = PayPalPayment()
+        payment.amount = amount
+        payment.currencyCode = "EUR"
+        payment.shortDescription = "Swift payment"
+        
+        if (!payment.processable) {
+            println("You messed up!")
+        } else {
+            println("THis works")
+            var paymentViewController = PayPalPaymentViewController(payment: payment, configuration: config, delegate: self)
+            self.presentViewController(paymentViewController, animated: false, completion: nil)
+        }
+    }
+    
 
+    
+    func payPalPaymentViewController(paymentViewController: PayPalPaymentViewController!, didCompletePayment completedPayment: PayPalPayment!) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func payPalPaymentDidCancel(paymentViewController: PayPalPaymentViewController!) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 

@@ -36,51 +36,8 @@ class ViewController: UIViewController {
         NSLog(String(format:"%f", BMIInput));
         writeBMI(BMIInput);
         //writeHeight(height);
-        writeWeight(weight*1000)
+        writeWeight(weight*1000) //* 1000 to convert Kg to g
         BMIOutput.text = String(format:"%f", BMIInput);
-    }
-    
-    
-    func writeBodyTemperature(){
-        let identifier = HKQuantityTypeIdentifierBodyTemperature;
-        let quantityType = HKObjectType.quantityTypeForIdentifier(identifier);
-        
-        let authorisationStatus = healthStore?.authorizationStatusForType(quantityType);
-        
-        if (authorisationStatus != HKAuthorizationStatus.SharingAuthorized){
-            NSLog("Not authorised to write body temp");
-            return;
-        }
-        
-        let min: UInt32 = 977;
-        let max: UInt32 = 995;
-        //Generate a random temp value
-        let temperatureValueInDegF = Double((arc4random() % (max - min)) + min) / 10;
-        
-        let temperatureQuantity = HKQuantity(unit: HKUnit.degreeFahrenheitUnit(), doubleValue: temperatureValueInDegF);
-        
-        let startDate = NSDate();
-        let endDate = NSDate();
-        
-        //TAdd metadata, saying that the body temp is from the ear
-        let metadata = [HKMetadataKeyBodyTemperatureSensorLocation:HKBodyTemperatureSensorLocation.Ear.rawValue];
-        
-        let temperatureSample = HKQuantitySample(type: quantityType, quantity: temperatureQuantity, startDate: startDate, endDate: endDate, metadata: metadata);
-        
-        
-        healthStore?.saveObject(temperatureSample, withCompletion: {
-            (success: Bool, error: NSError!) -> Void in
-            if success {
-                dispatch_async(dispatch_get_main_queue(), {
-                    var alert = UIAlertController(title: "Information", message: "Body temp saved", preferredStyle: UIAlertControllerStyle.Alert);
-                    self.presentViewController(alert, animated: true, completion: nil);
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil));
-                    NSLog("Temp was saved OK");
-                })
-            }else{
-                NSLog("Failed to save temperature. Error: \(error)");
-            }
-        })
     }
     
     func writeHeight(HeightInput: Double){
@@ -156,10 +113,6 @@ class ViewController: UIViewController {
         
         let startDate = NSDate();
         let endDate = NSDate();
-        
-//        let weight: Double = 79.5; //kg
-//        let height: Double = 1.90; //m
-//        let BMI: Double = (weight/height) / height;
         
         let BMIQuantity = HKQuantity(unit: HKUnit.countUnit(), doubleValue: BMIInput);
         

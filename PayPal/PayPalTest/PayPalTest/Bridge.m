@@ -1,9 +1,10 @@
 //
 //  Bridge.m
-//  PayPalTest
+//  PayPalSDK
 //
-//  Created by DavidMcQueen on 07/12/2014.
-//  Copyright (c) 2014 David McQueen. All rights reserved.
+//  Created by Messerschmidt, Tim on 08.06.14.
+//  Copyright (c) 2014 Messerschmidt, Tim. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "PayPalMobile.h"

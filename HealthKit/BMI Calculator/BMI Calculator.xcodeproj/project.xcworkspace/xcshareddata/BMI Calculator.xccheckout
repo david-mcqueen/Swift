@@ -12,20 +12,24 @@
 	<dict>
 		<key>89DEA3F5F9568CF75855BA588A653ED890DBDD26</key>
 		<string>https://github.com/david-mcqueen/Swift.git</string>
+		<key>B95B659ACAE02E207B268B4FD7357E9ABB18825D</key>
+		<string>https://github.com/david-mcqueen/BMI-Calculator.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HealthKit/BMI Calculator/BMI Calculator.xcodeproj</string>
+	<string>BMI Calculator.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>89DEA3F5F9568CF75855BA588A653ED890DBDD26</key>
 		<string>../../../..</string>
+		<key>B95B659ACAE02E207B268B4FD7357E9ABB18825D</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/david-mcqueen/Swift.git</string>
+	<string>https://github.com/david-mcqueen/BMI-Calculator.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>89DEA3F5F9568CF75855BA588A653ED890DBDD26</string>
+	<string>B95B659ACAE02E207B268B4FD7357E9ABB18825D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>89DEA3F5F9568CF75855BA588A653ED890DBDD26</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Swift</string>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B95B659ACAE02E207B268B4FD7357E9ABB18825D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BMI%20Calculator</string>
 		</dict>
 	</array>
 </dict>

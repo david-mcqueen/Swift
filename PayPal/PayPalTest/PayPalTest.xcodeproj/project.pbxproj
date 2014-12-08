@@ -13,6 +13,15 @@
 		55440B551A34B12500969FBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55440B541A34B12500969FBC /* Images.xcassets */; };
 		55440B581A34B12500969FBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55440B561A34B12500969FBC /* LaunchScreen.xib */; };
 		55440B641A34B12500969FBC /* PayPalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55440B631A34B12500969FBC /* PayPalTestTests.swift */; };
+		55440B7E1A34B14F00969FBC /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440B761A34B14F00969FBC /* libPayPalMobile.a */; };
+		55440B921A34B44E00969FBC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440B911A34B44E00969FBC /* AudioToolbox.framework */; };
+		55440B961A34B46300969FBC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440B951A34B46300969FBC /* AVFoundation.framework */; };
+		55440B981A34B47300969FBC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440B971A34B47300969FBC /* CoreLocation.framework */; };
+		55440B9A1A34B48300969FBC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440B991A34B48300969FBC /* CoreMedia.framework */; };
+		55440B9E1A34B48F00969FBC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440B9D1A34B48F00969FBC /* MessageUI.framework */; };
+		55440BA01A34B49C00969FBC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440B9F1A34B49C00969FBC /* MobileCoreServices.framework */; };
+		55440BA41A34B4AA00969FBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55440BA31A34B4AA00969FBC /* SystemConfiguration.framework */; };
+		55440BA71A34B66900969FBC /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 55440BA61A34B66900969FBC /* Bridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,31 @@
 		55440B5D1A34B12500969FBC /* PayPalTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayPalTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55440B621A34B12500969FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55440B631A34B12500969FBC /* PayPalTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalTestTests.swift; sourceTree = "<group>"; };
+		55440B6E1A34B14F00969FBC /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		55440B6F1A34B14F00969FBC /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		55440B701A34B14F00969FBC /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		55440B711A34B14F00969FBC /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		55440B721A34B14F00969FBC /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		55440B731A34B14F00969FBC /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		55440B741A34B14F00969FBC /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		55440B751A34B14F00969FBC /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		55440B761A34B14F00969FBC /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		55440B771A34B14F00969FBC /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		55440B781A34B14F00969FBC /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		55440B791A34B14F00969FBC /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		55440B7A1A34B14F00969FBC /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		55440B7B1A34B14F00969FBC /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		55440B7C1A34B14F00969FBC /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		55440B7D1A34B14F00969FBC /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		55440B911A34B44E00969FBC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		55440B951A34B46300969FBC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		55440B971A34B47300969FBC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55440B991A34B48300969FBC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		55440B9D1A34B48F00969FBC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		55440B9F1A34B49C00969FBC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		55440BA31A34B4AA00969FBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		55440BA51A34B66800969FBC /* PayPalTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PayPalTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		55440BA61A34B66900969FBC /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +77,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55440BA41A34B4AA00969FBC /* SystemConfiguration.framework in Frameworks */,
+				55440BA01A34B49C00969FBC /* MobileCoreServices.framework in Frameworks */,
+				55440B9E1A34B48F00969FBC /* MessageUI.framework in Frameworks */,
+				55440B9A1A34B48300969FBC /* CoreMedia.framework in Frameworks */,
+				55440B981A34B47300969FBC /* CoreLocation.framework in Frameworks */,
+				55440B961A34B46300969FBC /* AVFoundation.framework in Frameworks */,
+				55440B921A34B44E00969FBC /* AudioToolbox.framework in Frameworks */,
+				55440B7E1A34B14F00969FBC /* libPayPalMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +101,14 @@
 		55440B3F1A34B12500969FBC = {
 			isa = PBXGroup;
 			children = (
+				55440BA31A34B4AA00969FBC /* SystemConfiguration.framework */,
+				55440B9F1A34B49C00969FBC /* MobileCoreServices.framework */,
+				55440B9D1A34B48F00969FBC /* MessageUI.framework */,
+				55440B991A34B48300969FBC /* CoreMedia.framework */,
+				55440B971A34B47300969FBC /* CoreLocation.framework */,
+				55440B951A34B46300969FBC /* AVFoundation.framework */,
+				55440B911A34B44E00969FBC /* AudioToolbox.framework */,
+				55440B6D1A34B14F00969FBC /* PayPalMobile */,
 				55440B4A1A34B12500969FBC /* PayPalTest */,
 				55440B601A34B12500969FBC /* PayPalTestTests */,
 				55440B491A34B12500969FBC /* Products */,
@@ -83,6 +133,8 @@
 				55440B541A34B12500969FBC /* Images.xcassets */,
 				55440B561A34B12500969FBC /* LaunchScreen.xib */,
 				55440B4B1A34B12500969FBC /* Supporting Files */,
+				55440BA61A34B66900969FBC /* Bridge.m */,
+				55440BA51A34B66800969FBC /* PayPalTest-Bridging-Header.h */,
 			);
 			path = PayPalTest;
 			sourceTree = "<group>";
@@ -110,6 +162,30 @@
 				55440B621A34B12500969FBC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55440B6D1A34B14F00969FBC /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				55440B6E1A34B14F00969FBC /* CardIO.h */,
+				55440B6F1A34B14F00969FBC /* CardIOCreditCardInfo.h */,
+				55440B701A34B14F00969FBC /* CardIODetectionMode.h */,
+				55440B711A34B14F00969FBC /* CardIOPaymentViewController.h */,
+				55440B721A34B14F00969FBC /* CardIOPaymentViewControllerDelegate.h */,
+				55440B731A34B14F00969FBC /* CardIOUtilities.h */,
+				55440B741A34B14F00969FBC /* CardIOView.h */,
+				55440B751A34B14F00969FBC /* CardIOViewDelegate.h */,
+				55440B761A34B14F00969FBC /* libPayPalMobile.a */,
+				55440B771A34B14F00969FBC /* PayPalConfiguration.h */,
+				55440B781A34B14F00969FBC /* PayPalFuturePaymentViewController.h */,
+				55440B791A34B14F00969FBC /* PayPalMobile.h */,
+				55440B7A1A34B14F00969FBC /* PayPalOAuthScopes.h */,
+				55440B7B1A34B14F00969FBC /* PayPalPayment.h */,
+				55440B7C1A34B14F00969FBC /* PayPalPaymentViewController.h */,
+				55440B7D1A34B14F00969FBC /* PayPalProfileSharingViewController.h */,
+			);
+			name = PayPalMobile;
+			path = "../../PayPal-iOS-SDK-master/PayPalMobile";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55440B501A34B12500969FBC /* ViewController.swift in Sources */,
+				55440BA71A34B66900969FBC /* Bridge.m in Sources */,
 				55440B4E1A34B12500969FBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +413,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PayPalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Dave/MEGA/Development,
+					"Programming/Swift/PayPal-iOS-SDK-master/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PayPalTest/PayPalTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +435,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PayPalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Dave/MEGA/Development,
+					"Programming/Swift/PayPal-iOS-SDK-master/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PayPalTest/PayPalTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
