@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,27 +19,55 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-Xh-0RN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFG-yi-C1H">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-lQ-nfg">
+                                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3P5-Wh-264">
+                                        <rect key="frame" x="8" y="571" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U15-wI-207">
+                                        <rect key="frame" x="58" y="8" width="534" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-v7-2j3">
+                                        <rect key="frame" x="58" y="562" width="534" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="BFG-yi-C1H" secondAttribute="trailing" id="64x-H9-JiT"/>
-                                    <constraint firstItem="BFG-yi-C1H" firstAttribute="leading" secondItem="Gf5-Xh-0RN" secondAttribute="leading" id="lxo-tM-Zhl"/>
-                                    <constraint firstItem="BFG-yi-C1H" firstAttribute="top" secondItem="Gf5-Xh-0RN" secondAttribute="top" id="t9X-1Z-yPQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="BFG-yi-C1H" secondAttribute="bottom" id="trY-Ra-Li6"/>
+                                    <constraint firstItem="U15-wI-207" firstAttribute="top" secondItem="Gf5-Xh-0RN" secondAttribute="top" constant="8" id="4tR-JZ-02p"/>
+                                    <constraint firstItem="3P5-Wh-264" firstAttribute="top" secondItem="cIa-lQ-nfg" secondAttribute="bottom" constant="542" id="7l5-WP-0q3"/>
+                                    <constraint firstItem="U15-wI-207" firstAttribute="leading" secondItem="cIa-lQ-nfg" secondAttribute="trailing" constant="8" id="Drd-2d-asf"/>
+                                    <constraint firstItem="gkl-v7-2j3" firstAttribute="leading" secondItem="3P5-Wh-264" secondAttribute="trailing" constant="8" id="EdO-hD-dcn"/>
+                                    <constraint firstItem="cIa-lQ-nfg" firstAttribute="top" secondItem="Gf5-Xh-0RN" secondAttribute="top" constant="8" id="FkK-co-3iv"/>
+                                    <constraint firstItem="gkl-v7-2j3" firstAttribute="top" secondItem="U15-wI-207" secondAttribute="bottom" constant="524" id="G0d-pa-vFA"/>
+                                    <constraint firstItem="3P5-Wh-264" firstAttribute="leading" secondItem="Gf5-Xh-0RN" secondAttribute="leading" constant="8" id="GKS-Yk-7HC"/>
+                                    <constraint firstItem="gkl-v7-2j3" firstAttribute="top" secondItem="U15-wI-207" secondAttribute="bottom" constant="524" id="IVt-fd-qfY"/>
+                                    <constraint firstItem="cIa-lQ-nfg" firstAttribute="leading" secondItem="Gf5-Xh-0RN" secondAttribute="leading" constant="8" id="VBZ-LB-55Y"/>
+                                    <constraint firstItem="U15-wI-207" firstAttribute="leading" secondItem="cIa-lQ-nfg" secondAttribute="trailing" constant="8" id="XPg-p9-IJ7"/>
+                                    <constraint firstAttribute="trailing" secondItem="U15-wI-207" secondAttribute="trailing" constant="8" id="YGq-6N-eqK"/>
+                                    <constraint firstItem="gkl-v7-2j3" firstAttribute="leading" secondItem="3P5-Wh-264" secondAttribute="trailing" constant="8" id="qYX-JS-Pzh"/>
+                                    <constraint firstAttribute="trailing" secondItem="gkl-v7-2j3" secondAttribute="trailing" constant="8" id="s5t-FE-Grg"/>
+                                    <constraint firstAttribute="bottom" secondItem="3P5-Wh-264" secondAttribute="bottom" constant="8" id="wng-dK-K2R"/>
+                                    <constraint firstAttribute="bottom" secondItem="gkl-v7-2j3" secondAttribute="bottom" constant="8" id="zAz-Nq-AQF"/>
+                                    <constraint firstItem="3P5-Wh-264" firstAttribute="top" secondItem="cIa-lQ-nfg" secondAttribute="bottom" constant="542" id="zDl-jy-OwD"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" secondItem="BFG-yi-C1H" secondAttribute="height" id="16f-Qh-eCS"/>
-                            <constraint firstItem="Gf5-Xh-0RN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="3Tt-JL-wcy"/>
-                            <constraint firstItem="Gf5-Xh-0RN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="5he-QA-eFc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gf5-Xh-0RN" secondAttribute="bottom" id="K8F-tO-7VL"/>
-                            <constraint firstAttribute="width" secondItem="BFG-yi-C1H" secondAttribute="width" id="Lnx-lu-yaj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Gf5-Xh-0RN" secondAttribute="trailing" constant="-16" id="s8Z-Xj-7Vh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gf5-Xh-0RN" secondAttribute="bottom" id="hhI-Of-MxB"/>
+                            <constraint firstItem="Gf5-Xh-0RN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lUY-aG-t65"/>
+                            <constraint firstItem="Gf5-Xh-0RN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="tcz-NR-bHm"/>
+                            <constraint firstAttribute="trailing" secondItem="Gf5-Xh-0RN" secondAttribute="trailing" id="x8h-jm-Ter"/>
                         </constraints>
                     </view>
                 </viewController>
