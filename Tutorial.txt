@@ -32,3 +32,7 @@ Variables are declared with 'var'
 
 
 It is best to use let where possible, as this allows the compiler to make better optimisation choices
+
+
+
+Tutorial on Adaptive Layouts: http://www.raywenderlich.com/83276/beginning-adaptive-layout-tutorial
